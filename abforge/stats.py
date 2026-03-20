@@ -19,7 +19,7 @@ class TestResult:
     alpha: float
 
     def __repr__(self):
-        sig = "✅ SIGNIFICANT" if self.significant else "❌ NOT SIGNIFICANT"
+        sig = "SIGNIFICANT" if self.significant else "NOT SIGNIFICANT"
         return (
             f"\n{self.test_name} Results — {sig}\n"
             f"{'─' * 45}\n"

@@ -21,9 +21,9 @@ class SequentialTestResult:
 
     def __repr__(self):
         decision_map = {
-            "stop_significant": "🛑 STOP — Significant result detected",
-            "stop_futile":      "🛑 STOP — Futile to continue",
-            "continue":         "▶️  CONTINUE — No conclusion yet",
+            "stop_significant": "STOP — Significant result detected",
+            "stop_futile":      "STOP — Futile to continue",
+            "continue":         "CONTINUE — No conclusion yet",
         }
         return (
             f"\nSequential Test — {decision_map[self.decision]}\n"
