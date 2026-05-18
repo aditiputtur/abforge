@@ -1,4 +1,5 @@
 [![CI](https://github.com/aditiputtur/abforge/actions/workflows/ci.yml/badge.svg)](https://github.com/aditiputtur/abforge/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/abforge)](https://pypi.org/project/abforge/)
 # abforge
 
 > A Python package for the full A/B test lifecycle, from power analysis to sequential monitoring and variance reduction.
@@ -81,9 +82,7 @@ print(cuped_result)
 ## Installation
 
 ```bash
-git clone https://github.com/aditiputtur/abforge
-cd abforge
-pip install -r requirements.txt
+pip install abforge
 ```
 
 ---
