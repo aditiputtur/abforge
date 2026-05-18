@@ -7,7 +7,7 @@ name = "abforge"
 version = "0.1.0"
 description = "A Python package for the full A/B test lifecycle — power analysis, hypothesis testing, sequential testing, and CUPED variance reduction."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.8"
 keywords = ["ab-testing", "statistics", "experimentation", "hypothesis-testing", "cuped", "sequential-testing"]
 dependencies = [
@@ -29,3 +29,6 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/aditiputtur/abforge"
+
+[tool.setuptools.packages.find]
+include = ["abforge*"]
