@@ -163,12 +163,15 @@ CUPED removes variance explained by a pre-experiment covariate from the outcome 
 abforge/
 ├── abforge/
 │   ├── __init__.py
-│   ├── power.py        # Sample size and power calculations
-│   ├── stats.py        # Hypothesis tests
-│   ├── sequential.py   # Sequential testing and alpha spending
-│   ├── cuped.py        # CUPED variance reduction
-│   └── viz.py          # Plotly visualizations
+│   ├── power.py
+│   ├── stats.py
+│   ├── sequential.py
+│   ├── cuped.py
+│   └── viz.py
 ├── notebooks/
 │   └── ecommerce_ab_analysis.ipynb
+├── tests/
+│   └── test_basic.py
+├── pyproject.toml
 └── requirements.txt
 ```
