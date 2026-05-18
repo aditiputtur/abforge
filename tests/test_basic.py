@@ -40,7 +40,7 @@ def test_power_curve_returns_correct_length():
 def test_proportions_test_significant():
     # Large effect, large n — should be significant
     result = proportions_test(450, 5000, 550, 5000)
-    assert result.significant is True
+    assert result.significant
     assert 0 <= result.p_value <= 1
     assert result.absolute_effect > 0
 
@@ -48,15 +48,14 @@ def test_proportions_test_significant():
 def test_proportions_test_not_significant():
     # Tiny effect — should not be significant
     result = proportions_test(500, 5000, 501, 5000)
-    assert result.significant is False
-
+    assert not result.significant
 
 def test_means_test():
     rng = np.random.default_rng(42)
     control = rng.normal(50, 10, 2000)
     treatment = rng.normal(53, 10, 2000)
     result = means_test(control, treatment)
-    assert result.significant is True
+    assert result.significant
     assert 0 <= result.p_value <= 1
     assert len(result.confidence_interval) == 2
 
@@ -65,7 +64,7 @@ def test_chi_square_test():
     table = np.array([[450, 4550], [490, 4510]])
     result = chi_square_test(table)
     assert 0 <= result.p_value <= 1
-    assert isinstance(result.significant, bool)
+    assert isinstance(result.significant, (bool, np.bool_))
 
 
 def test_sequential_test_decisions_are_valid():
