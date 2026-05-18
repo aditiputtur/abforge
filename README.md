@@ -1,3 +1,4 @@
+[![CI](https://github.com/aditiputtur/abforge/actions/workflows/ci.yml/badge.svg)](https://github.com/aditiputtur/abforge/actions/workflows/ci.yml)
 # abforge
 
 > A Python package for the full A/B test lifecycle, from power analysis to sequential monitoring and variance reduction.
